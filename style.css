@@ -1,0 +1,57 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.container {
+  width: 100%;
+  height: 100vh;
+  background: #111;
+}
+
+svg {
+  font-size: 150px;
+  padding-top: 11%;
+}
+
+.copy {
+  fill: none;
+  /* stroke: white; */
+  stroke: #fff;
+  stroke-width: 3px;
+  stroke-dasharray: 8% 30%;
+  stroke-dashoffset: 0%;
+  animation: anim 6s linear infinite alternate;
+}
+
+@keyframes anim {
+  100% {
+    stroke-dashoffset: -100%;
+  }
+}
+
+.copy1 {
+  stroke: #2a6fdb;
+  animation-delay: -1s;
+}
+
+.copy2 {
+  stroke: #54d2d2;
+  animation-delay: -2s;
+}
+
+.copy3 {
+  stroke: #ffcb00;
+  animation-delay: -3s;
+}
+
+.copy4 {
+  stroke: #c7417b;
+  animation-delay: -4s;
+}
+
+.copy5 {
+  stroke: #ffc107;
+  animation-delay: -5s;
+}
