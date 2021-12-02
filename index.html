@@ -4,20 +4,26 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
+    <title>Awesome text</title>
     <link rel="stylesheet" href="style.css" />
   </head>
   <body>
     <div class="container">
-      <svg viewBox="0 0 1000 400">
-        <text id="myText" x="50%" y="50%" text-anchor="middle" fill="none">
-          Word
+      <svg class="drag-disable">
+        <text
+          id="awesome-text"
+          x="50%"
+          y="50%"
+          text-anchor="middle"
+          fill="none"
+        >
+          Awesome
         </text>
-        <use xlink:href="#myText" class="copy copy1"></use>
-        <use xlink:href="#myText" class="copy copy2"></use>
-        <use xlink:href="#myText" class="copy copy3"></use>
-        <use xlink:href="#myText" class="copy copy4"></use>
-        <use xlink:href="#myText" class="copy copy5"></use>
+        <use xlink:href="#awesome-text" class="clone one"></use>
+        <use xlink:href="#awesome-text" class="clone two"></use>
+        <use xlink:href="#awesome-text" class="clone three"></use>
+        <use xlink:href="#awesome-text" class="clone four"></use>
+        <use xlink:href="#awesome-text" class="clone five"></use>
       </svg>
     </div>
   </body>

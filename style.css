@@ -1,29 +1,76 @@
+/* Common start */
+
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
 }
 
+/* Common end */
+
 .container {
   width: 100%;
   height: 100vh;
   background: #111;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
+
+/* Awesome text start */
 
 svg {
-  font-size: 150px;
-  padding-top: 11%;
+  width: 100%;
+  height: 100%;
+  font-size: 10rem;
 }
 
-.copy {
+.clone {
   fill: none;
-  /* stroke: white; */
-  stroke: #fff;
+  stroke: white;
   stroke-width: 3px;
   stroke-dasharray: 8% 30%;
   stroke-dashoffset: 0%;
   animation: anim 6s linear infinite alternate;
 }
+
+.one {
+  stroke: #2a6fdb;
+  animation-delay: -1s;
+}
+
+.two {
+  stroke: #54d2d2;
+  animation-delay: -2s;
+}
+
+.three {
+  stroke: #ffcb00;
+  animation-delay: -3s;
+}
+
+.four {
+  stroke: #c7417b;
+  animation-delay: -4s;
+}
+
+.five {
+  stroke: #ffc107;
+  animation-delay: -5s;
+}
+
+/* Awesome text start */
+
+.drag-disable {
+  -webkit-touch-callout: none;
+  -webkit-user-select: none;
+  -khtml-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+
+/* Animations start */
 
 @keyframes anim {
   100% {
@@ -31,27 +78,4 @@ svg {
   }
 }
 
-.copy1 {
-  stroke: #2a6fdb;
-  animation-delay: -1s;
-}
-
-.copy2 {
-  stroke: #54d2d2;
-  animation-delay: -2s;
-}
-
-.copy3 {
-  stroke: #ffcb00;
-  animation-delay: -3s;
-}
-
-.copy4 {
-  stroke: #c7417b;
-  animation-delay: -4s;
-}
-
-.copy5 {
-  stroke: #ffc107;
-  animation-delay: -5s;
-}
+/* Animations end */
